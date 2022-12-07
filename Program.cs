@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Xml.Xsl;
-using System.IO;
 
 namespace KnuOopLab2
 {
@@ -15,8 +14,12 @@ namespace KnuOopLab2
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             Transform();
+
+            var search = new DormitorySearch(new DomSearchStrategy("dormitory.xml"));
+
+            search.startShellLoop();
+            
         }
     }
 }
