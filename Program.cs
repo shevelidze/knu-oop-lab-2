@@ -22,6 +22,7 @@ namespace KnuOopLab2
 
             strategies.Add("linq", new LinqSearchStrategy("dormitory.xml"));
             strategies.Add("dom", new DomSearchStrategy("dormitory.xml"));
+            strategies.Add("sax", new SaxSearchStrategy("dormitory.xml"));
 
             Console.OutputEncoding = Encoding.Unicode;
 
