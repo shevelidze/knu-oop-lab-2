@@ -17,7 +17,7 @@ namespace KnuOopLab2
         public Inmate[] searchByName(string namePattern)
         {
             var elements = from element in _element.Descendants("inmate") where
-                           element.Attribute("name").Value.Contains(namePattern) select element;
+                           element.Attribute("name").Value.ToLower().Contains(namePattern.ToLower()) select element;
 
             var resultList = new List<Inmate>();
 
