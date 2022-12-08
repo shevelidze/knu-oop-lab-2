@@ -5,7 +5,7 @@ using System.Xml;
 
 namespace KnuOopLab2
 {
-    class DomSearchStrategy : DormitorySearchStrategy 
+    class DomSearchStrategy : IDormitorySearchStrategy 
     {
         public DomSearchStrategy(string filePath) {
             _document = new XmlDocument();
