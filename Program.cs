@@ -5,7 +5,6 @@ using System.Text;
 
 namespace KnuOopLab2
 {
-
     class Program
     {
         static void Transform()
@@ -26,25 +25,11 @@ namespace KnuOopLab2
 
             Console.OutputEncoding = Encoding.Unicode;
 
-            Console.Write(
-                String.Format(
-                    "Яку стратегію хочете використовувати ({0}): ",
-                    String.Join(", ", strategies.Keys)
-                )
-            );
-
-            var strategyKey = Console.ReadLine();
-
-            if (!strategies.ContainsKey(strategyKey))
-            {
-                Console.WriteLine("Невірне ім'я стратегії.");
-                return;
-            }
+            var strategyKey = Prompt.ReadString("Яку стратегію хочете використовувати?", strategies.Keys, "Невірне ім'я стратегії.");
 
             var search = new DormitorySearch(strategies[strategyKey]);
 
             search.startShellLoop();
-
         }
     }
 }

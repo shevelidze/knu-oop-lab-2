@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Xml;
 
 namespace KnuOopLab2
@@ -12,14 +10,14 @@ namespace KnuOopLab2
             _document.Load(filePath);
         }
 
-        public Inmate[] searchByName(string namePattern)
+        public Inmate[] searchByAttribute(string attributeName, string pattern)
         {
             var inmateNodes = _document.DocumentElement.SelectNodes("inmate");
             var resultList = new List<Inmate>();
 
             foreach (XmlNode node in inmateNodes)
             {
-                if (node.Attributes["name"].Value.ToLower().Contains(namePattern.ToLower()))
+                if (node.Attributes[attributeName].Value.ToLower().Contains(pattern.ToLower()))
                 {
                     resultList.Add(new Inmate(node.Attributes["name"].Value, node.Attributes["faculty"].Value,
                         node.Attributes["year"].Value, node.Attributes["building"].Value, node.Attributes["address"].Value

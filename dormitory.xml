@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <dormitoryDatabase>
-  <inmate name="Іванов Іван Іванович 1" faculty="Кубік 1" year="1" building="12" address="вул. Васильківська 1"  />
-  <inmate name="Іванов Іван Іванович 2" faculty="Кубік 2" year="2" building="1" address="вул. Васильківська 2"  />
-  <inmate name="Іванов Іван Іванович 3" faculty="Кубік 3" year="3" building="3" address="вул. Васильківська 3" />
-  <inmate name="Іванов Іван Іванович 4" faculty="Кубік 1" year="4" building="7" address="вул. Васильківська 4" />
-  <inmate name="Іванов Іван Іванович 5" faculty="Кубік 2" year="1" building="6" address="вул. Васильківська 5" />
-  <inmate name="Іванов Іван Іванович 6" faculty="Кубік 3" year="2" building="13" address="вул. Васильківська 6" />
-  <inmate name="Іванов Іван Іванович 7" faculty="Кубік 4" year="2" building="10" address="вул. Васильківська 7"/>
+  <inmate name="Болеслав Євгенійович Пономаренко" faculty="Хімічний факультет" year="3" building="3" address="місто Івано-Франківськ, пл. П. Орлика, 2" />
+  <inmate name="Ярослава Євгенівна Іванченко" faculty="Механіко-математичний факультет" year="4" building="5" address="місто Черкаси, пров. М. Коцюбинського, 10" />
+  <inmate name="Данило Іванович Іванченко" faculty="Хімічний факультет" year="1" building="1" address="місто Запоріжжя, пл. Б. Грінченка, 67" />
+  <inmate name="Дмитренко Євгенія Іванівна" faculty="Географічний факультет" year="1" building="14" address="місто Чернігів, вул. Копиленка, 35" />
+  <inmate name="Мірошниченко Олег Андрійович" faculty="Факультет комп'ютерних наук та кібернетики" year="2" building="6" address="місто Суми, просп. Арсенальна, 06" />
+  <inmate name="Ярослав Андрійович Панасюк" faculty="Факультет інформаційних технологій" year="3" building="3" address="місто Черкаси, пл. Мельникова, 31" />
+  <inmate name="Денис Борисович Павлюк" faculty="Факультет інформаційних технологій" year="2" building="15" address="місто Вінниця, вул. Солом’янська, 86" />
+  <inmate name="Лев Борисович Іванченко" faculty="Географічний факультет" year="4" building="13" address="місто Тернопіль, пров. Михайла Грушевського, 38" />
+  <inmate name="Надія Петрівна Петренко" faculty="Факультет комп'ютерних наук та кібернетики" year="4" building="5" address="місто Харків, просп. Арсенальна, 33" />
+  <inmate name="Таращук Людмила Федорівна" faculty="Географічний факультет" year="3" building="15" address="місто Рівне, пров. Фізкультури, 07" />
 </dormitoryDatabase>

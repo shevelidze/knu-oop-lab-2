@@ -14,10 +14,10 @@ namespace KnuOopLab2
             _element = XElement.Load(filePath);
         }
 
-        public Inmate[] searchByName(string namePattern)
+        public Inmate[] searchByAttribute(string attributeName, string pattern)
         {
             var elements = from element in _element.Descendants("inmate") where
-                           element.Attribute("name").Value.ToLower().Contains(namePattern.ToLower()) select element;
+                           element.Attribute(attributeName).Value.ToLower().Contains(pattern.ToLower()) select element;
 
             var resultList = new List<Inmate>();
 

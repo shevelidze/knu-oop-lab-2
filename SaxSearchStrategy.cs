@@ -5,12 +5,11 @@ namespace KnuOopLab2
 {
     class SaxSearchStrategy : IDormitorySearchStrategy
     {
-
         public SaxSearchStrategy(string filePath)
         {
             _filePath = filePath;
         }
-        public Inmate[] searchByName(string namePattern)
+        public Inmate[] searchByAttribute(string attributeName, string pattern)
         {
             var reader = new XmlTextReader(_filePath);
             var resultList = new List<Inmate>();
@@ -18,7 +17,7 @@ namespace KnuOopLab2
             {
                 if (reader.NodeType == XmlNodeType.Element)
                 {
-                    if ((reader.Name == "inmate") && (reader.GetAttribute("name").ToLower().Contains(namePattern.ToLower())))
+                    if ((reader.Name == "inmate") && (reader.GetAttribute(attributeName).ToLower().Contains(pattern.ToLower())))
                     {
                         resultList.Add(new Inmate(reader.GetAttribute("name"), reader.GetAttribute("faculty"),
                         reader.GetAttribute("year"), reader.GetAttribute("building"), reader.GetAttribute("address")));

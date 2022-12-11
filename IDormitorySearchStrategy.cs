@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace KnuOopLab2
+﻿namespace KnuOopLab2
 {
     interface IDormitorySearchStrategy
     {
-        public Inmate[] searchByName(string namePattern);
+        public Inmate[] searchByAttribute(string attributeName, string pattern);
     }
 }
